@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_getup_title" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_getup_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:text="@string/str_getup" android:singleLine="true" android:drawableRight="@drawable/ic_triangle_gray" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/iv_getup_share" android:background="@drawable/sel_share" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentRight="true"/>
+        <Button android:id="@+id/btn_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/sl_getup_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_getup_title">
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_getup_chart" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_activity_vertical">
+            <RelativeLayout android:gravity="center" android:id="@+id/rl_getup_getup" android:background="@color/gray" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="190dp"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_getup_time_of_sleep" android:background="@color/gray" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_getup_getup"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.record.myLife.view.LeftRightView android:id="@+id/v_right" android:paddingTop="40dp" android:layout_width="40dp" android:layout_height="250dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_getup_title"/>
+    <com.record.myLife.view.LeftRightView android:id="@+id/v_left" android:paddingTop="40dp" android:layout_width="40dp" android:layout_height="250dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

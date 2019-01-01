@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/tabhost" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"/>
+        <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/main_tab_group" android:background="@color/gray" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/main_layout_addExam" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_1" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/tv_tem_bottom_tagit" android:layout_width="match_parent" android:layout_height="25dp" android:src="@drawable/ic_bottom_tagit" android:scaleType="centerInside"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/gray_title" android:gravity="center" android:id="@+id/tv_tem_today" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_today" android:layout_below="@+id/tv_tem_bottom_tagit"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/main_layout_myExam" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_2" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/tv_tem_bottom_everyday" android:layout_width="match_parent" android:layout_height="25dp" android:src="@drawable/ic_bottom_everyday" android:scaleType="centerInside"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/gray_title" android:gravity="center" android:id="@+id/tv_tem_statistic" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_everyDay" android:layout_below="@+id/tv_tem_bottom_everyday"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/main_layout_message" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_3" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/tv_tem_bottom_getup" android:layout_width="match_parent" android:layout_height="25dp" android:src="@drawable/ic_bottom_getup" android:scaleType="centerInside"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/gray_title" android:gravity="center" android:id="@+id/tv_tem_getUp" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_statics" android:layout_below="@+id/tv_tem_bottom_getup"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/main_layout_settings" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_4" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/tv_tem_bottom_me" android:layout_width="match_parent" android:layout_height="25dp" android:src="@drawable/ic_bottom_me" android:scaleType="centerInside"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/gray_title" android:gravity="center" android:id="@+id/tv_tem_more" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_me" android:layout_below="@+id/tv_tem_bottom_me"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

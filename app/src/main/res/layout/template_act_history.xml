@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/h_tv_id" android:visibility="gone" android:layout_width="50dp" android:layout_height="60dp"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/h_tv_start" android:layout_width="50dp" android:layout_height="60dp" android:text="15:21"/>
+    <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/h_tv_name" android:background="@color/black_tran_tw" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="工作" android:layout_toRightOf="@+id/h_tv_start" android:layout_alignParentTop="true"/>
+    <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/h_tv_take" android:background="@color/black_tran_tw" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="52分" android:layout_toRightOf="@+id/h_tv_start" android:layout_alignBottom="@+id/h_tv_start"/>
+    <Button android:gravity="center_vertical" android:id="@+id/h_btn" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:text="图片" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

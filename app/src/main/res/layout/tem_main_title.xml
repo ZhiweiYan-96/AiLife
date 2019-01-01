@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/rl_statistic_title" android:layout_width="match_parent" android:layout_height="50dp">
+    <Button android:id="@+id/btn_statistic_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+    <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_statistic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每天" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_statistic_share" android:clickable="true" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/sel_share" android:layout_alignTop="@+id/tv_statistic_title" android:layout_alignParentRight="true"/>
+    <Button android:id="@+id/btn_statistic_change" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_toLeftOf="@+id/iv_statistic_share"/>
+    <Button android:textSize="20sp" android:id="@+id/btn_statistic_set" android:background="@drawable/sel_set" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

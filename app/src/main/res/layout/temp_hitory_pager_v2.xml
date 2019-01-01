@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/black_tran_es" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_alignTop="@+id/ll_history_v2_items" android:layout_alignBottom="@+id/ll_history_v2_items"/>
+    <ListView android:orientation="vertical" android:id="@+id/ll_history_v2_items" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

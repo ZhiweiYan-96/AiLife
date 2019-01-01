@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center_vertical" android:id="@+id/rl_row" android:background="@color/half_translate" android:layout_width="match_parent" android:layout_height="36dp" android:ignoreGravity="@+id/icon">
+    <TextView android:id="@+id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grabber" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_circle_front_white" android:layout_toLeftOf="@+id/icon" android:layout_alignParentTop="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textColor="@color/black" android:ellipsize="marquee" android:id="@+id/label" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标签" android:singleLine="true" android:layout_toLeftOf="@+id/circle" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true"/>
+    <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+</RelativeLayout>

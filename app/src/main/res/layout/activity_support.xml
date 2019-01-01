@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支持" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/btn_support_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/about_tv_info1" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="　　爱今天是一款免费软件，目前暂无资金支持，但我们会继续将免费做到底，我们的理念是将免费做得比收费还要好，更好地为您服务。您可以通过转账的方式支持我们，您提供的支持资金将全部用来发展爱今天，感谢您对爱今天的支持！" android:layout_below="@+id/about_tv_info"/>
+            <TextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/about_tv_info2" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="下面是支付宝账号，您可以使用支付宝的扫描二线码或转账功能进行赞助，感谢您的支持！" android:layout_below="@+id/about_tv_info1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/about_tv_info3" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:text="支付宝：624604006@qq.com(点击复制)" android:drawableTop="@drawable/ic_inspay_144" android:layout_below="@+id/about_tv_info2"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/about_tv_info4" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="提示：转账时记得留下您联系方式哦！" android:layout_below="@+id/about_tv_info3"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

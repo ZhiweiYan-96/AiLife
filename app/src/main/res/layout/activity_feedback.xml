@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/set_title" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="50dp" android:text="反馈"/>
+        <Button android:id="@+id/btn_feedback_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_act_title"/>
+    <EditText android:textSize="15sp" android:gravity="top" android:id="@+id/et_feedback_msg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="200dp" android:layout_margin="20dp" android:hint="您的意见、建议、感想..." android:ems="10" android:inputType="textMultiLine"/>
+    <EditText android:textSize="15sp" android:id="@+id/et_feedback_email" android:background="@color/white" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="(选填)您的QQ或邮箱" android:inputType="textEmailAddress"/>
+    <Button android:id="@+id/btn_feedback_commit" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="完成"/>
+</LinearLayout>

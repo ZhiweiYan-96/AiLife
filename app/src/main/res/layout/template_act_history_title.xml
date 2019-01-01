@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/h_tv_id" android:visibility="gone" android:layout_width="50dp" android:layout_height="60dp"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/h_tv_show" android:background="@color/translate" android:layout_width="50dp" android:layout_height="25dp"/>
+    <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/h_tv_date" android:background="@color/half_translate" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="25dp" android:text="工作" android:layout_toRightOf="@+id/h_tv_show" android:layout_alignParentTop="true"/>
+</RelativeLayout>

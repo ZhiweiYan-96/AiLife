@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/rl_noti_show_outer" android:background="@color/half_translate" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentLeft="true">
+    <RelativeLayout android:id="@+id/rl_noti_show_label_bg" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="5dp">
+        <ImageView android:id="@+id/iv_noti_show_label_pre" android:layout_width="@dimen/layout_height_small_ff" android:layout_height="@dimen/layout_height_small_ff" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_noti_show_label" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_label_bed" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_noti_right_coner" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="3dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/iv_noti_right_coner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/x_circle_white" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="9sp" android:gravity="center" android:id="@+id/tv_noti_right_coner_text" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_label_bed" android:text="隐" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/style_txt_prompt"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_noti_show_start" android:background="@drawable/ic_stop_gray" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_noti_show_tv_bg" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_toLeftOf="@+id/iv_noti_show_start" android:layout_toRightOf="@+id/rl_noti_show_label_bg">
+        <TextView android:textColor="@color/gray" android:gravity="bottom" android:id="@+id/tv_noti_show_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="202" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textColor="@color/gray" android:gravity="top" android:id="@+id/tv_noti_show_actName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxWidth="70dp" android:text="Boss" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

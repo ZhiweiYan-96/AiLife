@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/rl_tem_blue_1" android:paddingTop="@dimen/margin_half_vertical" android:layout_width="match_parent" android:layout_height="42dp" android:layout_below="@+id/rl_tem_blue_today">
+    <ProgressBar android:id="@+id/pb_progress" android:layout_width="match_parent" android:layout_height="4dp" android:progressDrawable="@drawable/pb_grass_v2" android:minHeight="4dp" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_name" android:layout_width="160dp" android:layout_height="@dimen/layout_height_small" android:text="28号" android:singleLine="true" style="@style/style_txt_content"/>
+    <TextView android:gravity="center" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="@dimen/layout_height_small" android:text="投资（0/600小时）0%" android:layout_alignParentRight="true" style="@style/style_txt_prompt"/>
+</RelativeLayout>

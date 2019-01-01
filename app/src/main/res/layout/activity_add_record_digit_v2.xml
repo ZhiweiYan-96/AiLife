@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/translate" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:id="@+id/btn_add_record_digit_back" android:clickable="true" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/sel_close_gray2black" android:scaleType="center" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_add_record_digit_title" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/str_add_history" android:drawableRight="@drawable/ic_triangle_gray" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_sel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textColor="@color/bg_yellow2" android:gravity="center_horizontal" android:id="@+id/tv_add_record_digit_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="开始时间应小于结束时间"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="30sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_add_record_digit_hour1" android:layout_width="0dp" android:layout_height="50dp" android:text="00" android:layout_weight="1"/>
+                <TextView android:textSize="30sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="50dp" android:text=":"/>
+                <TextView android:textSize="30sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_add_record_digit_minute1" android:layout_width="0dp" android:layout_height="50dp" android:text="00" android:layout_weight="1"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1.5">
+                    <TextView android:textSize="15sp" android:textColor="@color/black" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_add_record_digit_time_range" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1时3分" android:layout_weight="1"/>
+                    <ImageView android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_2" android:layout_weight="1"/>
+                </LinearLayout>
+                <TextView android:textSize="30sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_add_record_digit_hour2" android:layout_width="0dp" android:layout_height="50dp" android:text="00" android:layout_weight="1"/>
+                <TextView android:textSize="30sp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="50dp" android:text=":"/>
+                <TextView android:textSize="30sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_add_record_digit_minute2" android:layout_width="0dp" android:layout_height="50dp" android:text="00" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="20dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="2">
+                    <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_sub_date1" android:background="@drawable/sel_white2half" android:layout_width="0dp" android:layout_height="40dp" android:text="-" android:layout_weight="1"/>
+                    <Button android:id="@+id/btn_add_record_digit_date1" android:background="@null" android:layout_width="0dp" android:layout_height="40dp" android:text="今天" android:layout_weight="1.3"/>
+                    <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_add_date1" android:background="@drawable/sel_white2half" android:layout_width="0dp" android:layout_height="40dp" android:text="+" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="2">
+                    <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_sub_date2" android:background="@drawable/sel_white2half" android:layout_width="0dp" android:layout_height="40dp" android:text="-" android:layout_weight="1"/>
+                    <Button android:id="@+id/btn_add_record_digit_date2" android:background="@null" android:layout_width="0dp" android:layout_height="40dp" android:text="今天" android:layout_weight="1.3"/>
+                    <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_add_date2" android:background="@drawable/sel_white2half" android:layout_width="0dp" android:layout_height="40dp" android:text="+" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <HorizontalScrollView android:paddingTop="10dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_add_record_digit_items" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_add_record_label" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:gravity="center" android:layout_gravity="center" android:id="@+id/et_remind_add_remark" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="100dp" android:layout_height="wrap_content" android:text="" android:hint="@string/str_input_remark" android:singleLine="true" style="@style/style_txt_content"/>
+                <TextView android:gravity="center" android:background="@drawable/x_circle_ivory_1" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:hint="Or" style="@style/style_txt_content"/>
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_remind_tomato_label" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="100dp" android:layout_height="wrap_content" android:text="" android:hint="@string/str_click_to_select_label" android:singleLine="true" android:drawableLeft="@drawable/ic_label" style="@style/style_txt_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+                    <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number1" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="1" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number2" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="2" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number3" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="3" android:layout_weight="2"/>
+                    </TableRow>
+                    <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number4" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="4" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number5" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="5" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number6" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="6" android:layout_weight="2"/>
+                    </TableRow>
+                    <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number7" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="7" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number8" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="8" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number9" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="9" android:layout_weight="2"/>
+                    </TableRow>
+                    <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_numberpre" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="Pre" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_number0" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="0" android:layout_weight="2"/>
+                        <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_numbernext" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="50dp" android:text="Next" android:layout_weight="2"/>
+                    </TableRow>
+                </TableLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_c" android:background="@drawable/sel_white2half_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="C"/>
+                    <Button android:textSize="20sp" android:textColor="@color/black" android:id="@+id/btn_add_record_digit_backspace" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="50dp" android:text="C"/>
+                    <Button android:textColor="@color/black" android:id="@+id/btn_add_record_digit_save" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="150dp" android:text="Enter"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

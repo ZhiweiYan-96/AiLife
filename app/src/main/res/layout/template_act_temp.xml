@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@+id/tv_temp_act_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_temp_label_bg" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/iv_temp_color" android:layout_width="60dp" android:layout_height="60dp" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@+id/tv_temp_act_name" android:layout_width="60dp" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/rl_temp_label_bg" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

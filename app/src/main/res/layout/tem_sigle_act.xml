@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:padding="2dp" android:layout_width="50dp" android:layout_height="wrap_content" android:contentDescription="123">
+    <TextView android:id="@+id/tv_temp_act_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rl_temp_label_bg" android:layout_width="50dp" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_temp_color" android:layout_width="@dimen/layout_height_small_ff" android:layout_height="@dimen/layout_height_small_ff" android:src="@drawable/x_circle_blue_1" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_temp_label" android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/ic_label_bed" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_temp_top_left_corner" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_subgoal_black" android:scaleType="fitXY" android:layout_alignParentLeft="true"/>
+        <RelativeLayout android:id="@+id/rl_temp_right_coner" android:layout_width="15dp" android:layout_height="15dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/iv_temp_right_coner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/x_circle_white" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="9sp" android:gravity="center" android:id="@+id/tv_temp_right_coner_text" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_label_bed" android:text="隐" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/style_txt_prompt"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@+id/tv_temp_act_name" android:layout_width="50dp" android:layout_height="wrap_content" android:text="爱今天" android:singleLine="true" android:layout_below="@+id/rl_temp_label_bg" android:layout_alignParentLeft="true" style="@style/style_txt_content"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_statistic_title" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_summary_week" android:background="@drawable/x_blue_bg_black_frame_left" android:layout_width="65dp" android:layout_height="30dp" android:text="@string/str_week" android:layout_toRightOf="@+id/tv_statistic_day" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@+id/tv_summary_month" android:background="@drawable/x_tran_bg_black_frame_right" android:layout_width="65dp" android:layout_height="30dp" android:text="@string/str_month" android:layout_toRightOf="@+id/tv_summary_week" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/btn_statistic_calendar" android:padding="10dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/sel_calendar_black" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/sv_today_items" android:paddingBottom="@dimen/margin_activity_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_statistic_title">
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_tem_statistic" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_outer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:id="@+id/rl_tem_dough" android:layout_width="match_parent" android:layout_height="260dp" android:layout_marginTop="@dimen/margin_half_vertical"/>
+                <TextView android:textSize="30sp" android:gravity="center" android:id="@+id/tv_statistic_rank_week" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:text="学水级" android:layout_alignBottom="@+id/rl_tem_dough"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_tem_statistic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small_vertical" android:layout_marginRight="@dimen/margin_small_vertical" android:layout_below="@+id/rl_outer"/>
+            <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_statistic_unit" android:background="#08000000" android:layout_width="60dp" android:layout_height="30dp" android:text="单位：%" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.record.myLife.view.LeftRightView android:id="@+id/v_right" android:paddingTop="40dp" android:layout_width="40dp" android:layout_height="250dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_statistic_title"/>
+    <com.record.myLife.view.LeftRightView android:id="@+id/v_left" android:paddingTop="40dp" android:layout_width="40dp" android:layout_height="250dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

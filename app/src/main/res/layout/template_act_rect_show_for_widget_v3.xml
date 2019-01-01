@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center_vertical" android:id="@+id/rl_temp_rect_widget_show_outer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_temp_rect_widget_line_top" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_temp_rect_widget_line_top" android:background="@color/white" android:layout_width="match_parent" android:layout_height="1px"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_temp_rect_widget_line_left" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/rl_temp_rect_widget_show_outer2" android:layout_alignBottom="@+id/rl_temp_rect_widget_show_outer2" android:layout_alignParentLeft="true">
+        <TextView android:id="@+id/tv_temp_rect_widget_line_left" android:background="@color/white" android:layout_width="1px" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_temp_rect_widget_line_right" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/rl_temp_rect_widget_show_outer2" android:layout_alignBottom="@+id/rl_temp_rect_widget_show_outer2" android:layout_alignParentRight="true">
+        <TextView android:id="@+id/tv_temp_rect_widget_line_right" android:background="@color/white" android:layout_width="1px" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_temp_rect_widget_show_outer2" android:background="@color/half_translate" android:layout_width="match_parent" android:layout_height="60dp" android:layout_toLeftOf="@+id/rl_temp_rect_widget_line_right" android:layout_toRightOf="@+id/rl_temp_rect_widget_line_left" android:layout_below="@+id/rl_temp_rect_widget_line_top">
+        <ImageView android:id="@+id/iv_temp_show_label_outer_bg" android:layout_width="match_parent" android:layout_height="60dp" android:scaleType="fitXY" android:layout_alignParentLeft="true"/>
+        <TextView android:id="@+id/tv_temp_show_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/rl_temp_show_label_bg" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="5dp" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/iv_temp_show_label_pre" android:layout_width="@dimen/layout_height_small_ff" android:layout_height="@dimen/layout_height_small_ff" android:src="@drawable/x_circle_blue_1" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_temp_show_label" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_label_bed" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_temp_show_start" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_start_white" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/ll_temp_show_tv_bg" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_toLeftOf="@+id/iv_temp_show_start" android:layout_toRightOf="@+id/rl_temp_show_label_bg">
+            <TextView android:textColor="@color/white" android:gravity="bottom" android:id="@+id/tv_temp_show_actName" android:layout_width="70dp" android:layout_height="30dp" android:maxWidth="70dp" android:text="我是Boss我是Boss我是Boss我是Boss我是Boss" android:singleLine="true" android:layout_weight="2" android:layout_toLeftOf="@+id/tv_temp_show_hours" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_temp_show_remark" android:layout_width="wrap_content" android:layout_height="30dp" android:text="奋斗吧!青年！奋斗吧!青年！奋斗吧!青年！奋斗吧!青年！奋斗吧!青年！奋斗吧!青年！" android:singleLine="true" android:layout_weight="1" android:layout_toLeftOf="@+id/tv_temp_show_today_hours" android:layout_below="@+id/tv_temp_show_actName" android:layout_alignLeft="@+id/tv_temp_show_actName" style="@style/style_txt_prompt"/>
+            <TextView android:textSize="@dimen/textSize_Micro_Small_9" android:textColor="@color/white" android:gravity="right" android:id="@+id/tv_temp_show_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="78dp" android:text="10001/99999.0h" android:singleLine="true" android:layout_weight="2" android:layout_above="@+id/tv_temp_show_remark" android:layout_alignParentRight="true" style="@style/style_txt_prompt"/>
+            <TextView android:textSize="@dimen/textSize_Micro_Small_9" android:textColor="@color/white" android:gravity="right" android:id="@+id/tv_temp_show_today_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="78dp" android:text="99999.0h" android:singleLine="true" android:layout_weight="2" android:layout_below="@+id/tv_temp_show_actName" android:layout_alignParentRight="true" style="@style/style_txt_prompt"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_temp_top_left_corner" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_label_green_3" android:scaleType="fitXY" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_temp_rect_widget_line_bottom" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_temp_rect_widget_show_outer2">
+        <TextView android:id="@+id/tv_temp_rect_widget_line_bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="1px"/>
+    </RelativeLayout>
+</RelativeLayout>

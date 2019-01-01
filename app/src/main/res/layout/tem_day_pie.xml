@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="280dp">
+        <com.record.myLife.view.DayPie android:id="@+id/tp_time_pie" android:layout_width="200dp" android:layout_height="200dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:padding="@dimen/margin_quarter_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:background="@drawable/x_circle_blue_1" android:layout_width="@dimen/layout_height_tiny" android:layout_height="@dimen/layout_height_tiny"/>
+</LinearLayout>

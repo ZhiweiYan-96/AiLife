@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="280dp">
+    <RelativeLayout android:id="@+id/dialog_rl_f" android:layout_width="wrap_content" android:layout_height="50dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="选择图标" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TableLayout android:gravity="center" android:id="@+id/dialog_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="280dp" android:layout_below="@+id/dialog_rl_f">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_label_desklamp" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_desklamp" android:scaleType="center" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_label_bus" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_bus" android:scaleType="center" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_label_bed" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_bed" android:scaleType="center" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_label_music" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_music" android:scaleType="center" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_label_fork" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_fork" android:scaleType="center" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_label_coffee" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_coffee" android:scaleType="center" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_label_basketball" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_basketball" android:scaleType="center" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_label_broom" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_broom" android:scaleType="center" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_label_tv" android:background="@color/green" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:src="@drawable/ic_tv" android:scaleType="center" android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

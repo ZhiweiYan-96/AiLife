@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@drawable/x_tran_bg_black_frame_middle" android:layout_width="match_parent" android:layout_height="30dp">
+    <TextView android:id="@+id/tv_tem_add_record_min_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/tv_tem_add_record_dot" android:background="@drawable/sel_circle_gray2black" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="50dp" android:layout_height="30dp" android:layout_alignParentRight="true"/>
+    <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="left" android:id="@+id/tv_tem_add_record_min_text" android:background="@drawable/sel_translate2half" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_toLeftOf="@+id/tv_tem_add_record_dot"/>
+    <View android:background="@color/black_tran_es" android:layout_width="1px" android:layout_height="30dp" android:layout_toRightOf="@+id/tv_tem_add_record_min_text"/>
+</RelativeLayout>

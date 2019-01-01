@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_label_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标签" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_sel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/btn_label_subtype" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="类型标签"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/btn_label_mood" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="心得标签"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

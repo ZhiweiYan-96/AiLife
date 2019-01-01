@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/app_detail_action_area" android:background="@drawable/bg_explore_bottombar_shadow" android:layout_width="match_parent" android:layout_height="60dp" android:weightSum="6" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/app_detail_install_button" android:background="@drawable/wdj_ads_detail_install_button_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="6dp" android:text="安装" android:layout_weight="4"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/app_detail_action_area" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.wandoujia.ads.sdk.volley.toolbox.NetworkImageView android:id="@+id/app_detail_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <RelativeLayout android:id="@+id/app_title_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/app_detail_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="18dp" android:textColor="#333333" android:ellipsize="marquee" android:id="@+id/app_detail_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                    <TextView android:textSize="12dp" android:textColor="#333333" android:ellipsize="marquee" android:id="@+id/app_detail_app_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true" android:layout_below="@+id/app_detail_app_title" android:layout_alignParentLeft="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <HorizontalScrollView android:id="@+id/scroll_gallery" android:background="@android:color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:isScrollContainer="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/app_detail_image_gallery" android:layout_width="wrap_content" android:layout_height="170dp"/>
+            </HorizontalScrollView>
+            <TextView android:textSize="14dp" android:textColor="#aaaaaa" android:gravity="left|center_vertical|center_horizontal|center" android:background="#f4f4f4" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="30dp" android:text="应用描述"/>
+            <TextView android:id="@+id/app_detail_description_area" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/detail_description"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

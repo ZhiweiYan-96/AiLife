@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textSize="16sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/ab_drop_menu_item_title" android:background="@android:color/holo_blue_light" android:paddingLeft="7dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>

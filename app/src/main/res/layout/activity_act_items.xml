@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_act_title" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_act_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="类型" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_act_add_items" android:background="@drawable/sel_translate2half" android:clickable="true" android:layout_width="40dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@drawable/ic_plus_bl" android:scaleType="center" android:layout_toRightOf="@+id/textView1" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/sv_act_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/rl_act_title">
+        <RelativeLayout android:id="@+id/rl_act_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+    </ScrollView>
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小提示：长按可以修改哦！" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

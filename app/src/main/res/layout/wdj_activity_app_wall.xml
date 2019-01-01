@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="17dp" android:textColor="@android:color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/wdj_ads_title_bar" android:background="@drawable/bg_explore_actionbar" android:layout_width="match_parent" android:layout_height="45dp" android:text="精选应用" android:drawableLeft="@drawable/wdj_ads_title_back_normal" android:layout_alignParentTop="true"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/wdj_ads_title_bar"/>
+</RelativeLayout>

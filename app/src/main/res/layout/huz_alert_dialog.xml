@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center" android:orientation="vertical" android:id="@+id/parentPanel" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/pcenterPanel" android:layout_width="320dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large_vertical" android:layout_marginBottom="@dimen/margin_large_vertical">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="54dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_template" android:background="@color/white2" android:padding="@dimen/margin_activity_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_dialog_info"/>
+                <com.android.internal.widget.DialogTitle android:textSize="@dimen/textSize_Medium" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/alertTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="?android:attr/textAppearanceMedium"/>
+            </LinearLayout>
+            <View android:background="@color/bg_blue1" android:layout_width="match_parent" android:layout_height="2dp"/>
+            <ImageView android:gravity="fill_horizontal" android:id="@+id/titleDivider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:src="@android:drawable/divider_horizontal_dark" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ScrollView android:id="@+id/scrollView" android:paddingLeft="@dimen/margin_activity_horizontal" android:paddingTop="@dimen/margin_half_vertical" android:paddingRight="@dimen/margin_activity_horizontal" android:paddingBottom="@dimen/margin_half_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize_Small_Medium" android:textColor="@color/black" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="李克强：政府在治理雾霾等环境污染方面，决心是坚定的。我去年在《政府工作报告》中说，要向雾霾等污染宣战，不达目的决不停战。" style="?android:attr/textAppearanceMedium"/>
+            </ScrollView>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/customPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <FrameLayout android:id="@+id/custom" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5dp" android:paddingTop="@dimen/margin_half_vertical" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/leftSpacer" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+                <Button android:textColor="@color/black" android:layout_gravity="left" android:id="@+id/button1" android:background="@drawable/huz_btn_bg" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="button1" android:maxLines="2" android:layout_weight="1" style="@style/style_txt_content"/>
+                <Button android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@+id/button3" android:background="@drawable/huz_btn_bg" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="button2" android:maxLines="2" android:layout_weight="1" style="@style/style_txt_content"/>
+                <Button android:textColor="@color/black" android:layout_gravity="right" android:id="@+id/button2" android:background="@drawable/huz_btn_bg" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="button2" android:maxLines="2" android:layout_weight="1" style="@style/style_txt_content"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rightSpacer" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

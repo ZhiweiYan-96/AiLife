@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:orientation="horizontal" android:id="@+id/rl_temp_show_outer" android:background="@color/black_tran_tw" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentLeft="true">
+    <Button android:gravity="center" android:id="@+id/btn_today_add_goal" android:background="@drawable/sel_translate2half" android:layout_width="60dp" android:layout_height="60dp" android:text="@string/str_add_goal" android:singleLine="true"/>
+    <View android:background="@color/white2" android:layout_width="1px" android:layout_height="60dp"/>
+    <Button android:gravity="center" android:id="@+id/btn_today_time_line" android:background="@drawable/sel_translate2half" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/str_records" android:singleLine="true" android:layout_weight="1"/>
+    <View android:background="@color/white2" android:layout_width="1px" android:layout_height="60dp"/>
+    <Button android:gravity="center" android:id="@+id/btn_today_add_time" android:background="@drawable/sel_translate2half" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/str_add_history" android:singleLine="true" android:layout_weight="1"/>
+    <View android:background="@color/white2" android:layout_width="1px" android:layout_height="60dp"/>
+    <Button android:gravity="center" android:id="@+id/btn_today_manage_goal" android:background="@drawable/sel_translate2half" android:layout_width="60dp" android:layout_height="60dp" android:text="@string/str_goal" android:singleLine="true"/>
+</LinearLayout>

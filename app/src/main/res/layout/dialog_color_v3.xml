@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="280dp">
+    <TableLayout android:gravity="center" android:id="@+id/dialog_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="280dp">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_color_bg_green1" android:background="@color/bg_green1" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_green2" android:background="@color/bg_green2" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_green3" android:background="@color/bg_green3" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_color_bg_yellow1" android:background="@color/bg_yellow1" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_yellow2" android:background="@color/bg_yellow2" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_yellow3" android:background="@color/bg_yellow3" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_color_bg_blue1" android:background="@color/bg_blue1" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_blue2" android:background="@color/bg_blue2" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_blue3" android:background="@color/bg_blue3" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minWidth="280dp">
+            <ImageView android:id="@+id/iv_color_bg_red1" android:background="@color/bg_red1" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_red2" android:background="@color/bg_red2" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+            <ImageView android:id="@+id/iv_color_bg_red3" android:background="@color/bg_red3" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="2dp" android:scaleType="fitXY" android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

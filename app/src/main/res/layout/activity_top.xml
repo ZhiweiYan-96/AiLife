@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/tabhost" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_act_title" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_today_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16sp" android:textColor="@color/gray_title" android:gravity="center" android:id="@+id/tv_today_v4_today" android:background="@drawable/x_tran_bg_black_frame_left" android:layout_width="70dp" android:layout_height="30dp" android:text="@string/str_today" android:layout_centerVertical="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/white2" android:gravity="center" android:id="@+id/tv_today_v4_tomato" android:background="@drawable/x_blue_bg_black_frame_right" android:layout_width="70dp" android:layout_height="30dp" android:text="@string/str_tomato" android:layout_toRightOf="@+id/tv_today_v4_today" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_today_history" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_today_history" android:background="@drawable/sel_history" android:layout_width="40dp" android:layout_height="50dp" android:scaleType="center"/>
+                <TextView android:gravity="center" android:id="@+id/tv_today_upload_progress" android:layout_width="wrap_content" android:layout_height="50dp" android:text="1h" style="@style/style_txt_prompt"/>
+            </LinearLayout>
+            <Button android:id="@+id/iv_today_upload" android:background="@drawable/sel_upload" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center"/>
+            <Button android:id="@+id/iv_today_set_v2" android:background="@drawable/sel_set_v2" android:layout_width="@dimen/layout_height_small" android:layout_height="@dimen/layout_height_small" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"/>
+    </LinearLayout>
+</TabHost>

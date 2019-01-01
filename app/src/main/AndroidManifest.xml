@@ -1,0 +1,114 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.record.myLife">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="com.record.myLife.BaseApplication"
+        tools:replace="android:name"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="UMENG_APPKEY" android:value="53bb546b56240b8235092166"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="c360"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.record.myLife.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.SetActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.main.tomato.UnhandlerTomatoActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.main.AddActActivity_v2"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.other.DebugActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.history.ItemDetailActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.goal.GoalActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.about.AboutActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.about.FeedBackActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.main.StatisticActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.goal.GetUpActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.login.LoginActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.login.SignUpActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.other.TestActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.label.LabelMainActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.label.LabelInfoActivity_v2"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.label.LabelDetailActivity"/>
+        <activity android:theme="@style/ThemeOverlay.AppCompat" android:label="@string/app_name" android:name="com.record.myLife.settings.label.LabelSelectActivity"/>
+        <activity android:theme="@style/Theme_Dialog_notitle" android:label="@string/app_name" android:name="com.record.myLife.settings.remind.IntervalRemindActivity"/>
+        <activity android:theme="@style/Theme_Dialog_notitle" android:label="@string/app_name" android:name="com.record.myLife.view.AddNoteActivity"/>
+        <activity android:theme="@style/MyDialogStyleBottom" android:label="@string/app_name" android:name="com.record.myLife.settings.remind.RemindRestActivity"/>
+        <activity android:theme="@style/MyDialogStyleBottom" android:label="@string/app_name" android:name="com.record.myLife.settings.remind.RemindInvestActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.about.SupportActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.about.VersionActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.remind.SetRemindActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name="com.record.myLife.other.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="com.record.myLife.settings.BackupDbActivity_v2"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.record.myLife.view.ShowImageActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.goal.TypeActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.MeActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.settings.AboutItemsActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.goal.GoalListActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.settings.general.GeneralActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.other.ShowTableActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.other.TaoBaoAdsActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.login.FindPwActivity_v2"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.login.ResetPwActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.UserInfoActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.view.EditActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.tomato.TomatoActivity"/>
+        <activity android:theme="@style/MyDialogStyleBottom" android:name="com.record.myLife.main.tomato.RemindTomatoActivity" android:launchMode="singleInstance"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.add.AddRecordActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.settings.remind.RemindControlActivity"/>
+        <activity android:theme="@style/MyDialogStyleBottom_v3" android:name="com.record.myLife.add.AddRecordDigitActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/MyDialogStyleBottom_v3" android:name="com.record.myLife.add.AddRecordWheelActivity"/>
+        <activity android:theme="@style/MyDialogStyleUp" android:name="com.record.myLife.view.MyCalendarActivity"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.history.HistoryActivity_v2" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.TodayActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.TopActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.DynamicActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.main.SummaryActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.base.BottomActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.record.myLife.TemActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.record.myLife.goal.GoalSortActivity"/>
+        <service android:name="com.record.service.TimerService" android:enabled="true"/>
+        <service android:name="com.record.service.AutoBackupService"/>
+        <service android:name="com.record.service.UpdateServices"/>
+        <service android:name="com.record.service.RemindControlService"/>
+        <receiver android:name="com.record.receiver.ITodayReceiver" android:permission="BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="WEIBO_SEND_STATUS"/>
+                <action android:name="ALARM_SEND"/>
+                <action android:name="NOTI_RESTROPECTION_REGISTER"/>
+                <action android:name="AUTO_BACK_UP_DATA"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="WIDGET_UPDATE_BAR_UI"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.record.receiver.WidgetTodayBarProvider" android:description="@string/str_today_time">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_today_bar"/>
+        </receiver>
+        <receiver android:name="com.record.receiver.WidgetDoughPieProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_dough_pie"/>
+        </receiver>
+        <receiver android:name="com.record.receiver.WidgetTodayMainGoalItemsProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_today_main_goal_items"/>
+        </receiver>
+        <service android:name="com.record.service.WidgetGoalItemsServices" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false"/>
+        <activity android:name="com.qq.e.ads.ADActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+    </application>
+</manifest>

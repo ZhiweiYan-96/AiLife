@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/rl_goal_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/rl_goal_today">
+    <ProgressBar android:id="@+id/pb_goal_invest" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:progressDrawable="@drawable/pb_grass_v2" android:layout_below="@+id/tv_goal" style="?android:attr/progressBarStyleHorizontal"/>
+    <TextView android:textSize="10sp" android:gravity="center_vertical" android:id="@+id/tv_goal_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="投资（0/600小时）0%" android:layout_alignTop="@+id/pb_goal_invest" android:layout_alignRight="@+id/pb_goal_invest" android:layout_alignBottom="@+id/pb_goal_invest"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@color/white2" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_show_image_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <RelativeLayout android:id="@+id/rl_show_i_know_it" android:paddingBottom="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <CheckBox android:id="@+id/cb_no_show_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_no_show" style="@style/mycheckbox"/>
+        <Button android:id="@+id/btn_show_image_finish" android:background="@drawable/sel_white2half_frame" android:layout_width="100dp" android:layout_height="35dp" android:layout_marginTop="5dp" android:text="@string/str_i_know" android:layout_below="@+id/cb_no_show_check"/>
+    </RelativeLayout>
+</RelativeLayout>

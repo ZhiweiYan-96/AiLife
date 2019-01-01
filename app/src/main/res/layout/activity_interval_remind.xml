@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="300dp" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_add_note_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_remind_interval" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_add_note_close" android:clickable="true" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/sel_close_gray2black" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <EditText android:textSize="15sp" android:gravity="top" android:id="@+id/et_add_note_content" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:hint="今天的成长、得失、感悟、发现..." android:ems="10" android:inputType="textMultiLine">
+        <requestFocus/>
+    </EditText>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_add_note_content" android:background="@drawable/sel_white2half_frame" android:layout_width="100dp" android:layout_height="40dp" android:text="@string/str_sure"/>
+        <Button android:id="@+id/btn_add_note_down_count" android:background="@drawable/sel_white2half_frame" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:text="@string/str_down_count_close"/>
+    </LinearLayout>
+</LinearLayout>

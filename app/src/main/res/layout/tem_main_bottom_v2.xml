@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:orientation="horizontal" android:id="@+id/ll_tem_items" android:paddingTop="3dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/tv_tem_bottom_tagit" android:layout_width="match_parent" android:layout_height="30dp" android:src="@drawable/ic_bottom_tagit" android:scaleType="centerInside"/>
+        <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_tem_today" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_today" android:layout_below="@+id/tv_tem_bottom_tagit"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/tv_tem_bottom_everyday" android:layout_width="match_parent" android:layout_height="30dp" android:src="@drawable/ic_bottom_everyday" android:scaleType="centerInside"/>
+        <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_tem_statistic" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_everyDay" android:layout_below="@+id/tv_tem_bottom_everyday"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/tv_tem_bottom_getup" android:layout_width="match_parent" android:layout_height="30dp" android:src="@drawable/ic_bottom_getup" android:scaleType="centerInside"/>
+        <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_tem_getUp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_getup" android:layout_below="@+id/tv_tem_bottom_getup"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_tem_bottom_menu_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/tv_tem_bottom_me" android:layout_width="match_parent" android:layout_height="30dp" android:src="@drawable/ic_bottom_me" android:scaleType="centerInside"/>
+        <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_tem_more" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_me" android:layout_below="@+id/tv_tem_bottom_me"/>
+    </RelativeLayout>
+</LinearLayout>

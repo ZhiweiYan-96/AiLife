@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@+id/ab_sheet_title_tv" android:background="@drawable/shape_corners_white_corner_top_lr" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="title" android:singleLine="true"/>
+        <TextView android:background="#bebebe" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ListView android:id="@+id/ab_sheet_lv" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/ab_sheet_cancel_tv" android:background="@drawable/selector_bg_sheet_corner_all" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="cancel" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/ivory" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_goal_title" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_goal_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_goal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_goal_info" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_goal_share" android:clickable="true" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="10dp" android:src="@drawable/sel_share" android:layout_alignTop="@+id/tv_goal_title" android:layout_alignParentRight="true"/>
+        <Button android:id="@+id/btn_goal_change" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_toLeftOf="@+id/iv_goal_share"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_goal_title"/>
+    <RelativeLayout android:id="@+id/rl_goal_name" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/rl_goal_title">
+        <RelativeLayout android:id="@+id/rl_goal_show_label_bg" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="5dp" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/iv_goal_show_color" android:layout_width="@dimen/layout_height_medium" android:layout_height="@dimen/layout_height_medium" android:src="@drawable/x_circle_blue_1" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_goal_show_label" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_label_bed" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/bg_green3" android:gravity="center" android:id="@+id/tv_goal_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="0\10hours" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20dp" android:textColor="@color/black" android:id="@+id/tv_goal_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="20dp" android:maxWidth="150dp" android:text="" android:singleLine="true" android:layout_toRightOf="@+id/rl_goal_show_label_bg" android:layout_alignBottom="@+id/rl_goal_show_label_bg"/>
+        <TextView android:textSize="11dp" android:id="@+id/tv_goal_startTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="" android:layout_toRightOf="@+id/rl_goal_show_label_bg" android:layout_alignBottom="@+id/rl_goal_show_label_bg"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rl_goal_info" android:background="@color/white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/rl_goal_name">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_weight="1">
+            <TextView android:gravity="center" android:id="@+id/tv_goal_predict_hours" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0h"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_expected_daily"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:gravity="center" android:id="@+id/tv_goal_actual_hours" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0h"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_actual_day"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:gravity="center" android:id="@+id/tv_goal_week_hours" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0h"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_last_7_days"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:gravity="center" android:id="@+id/tv_goal_need_hours" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0h"/>
+            <TextView android:gravity="center" android:id="@+id/tv_goal_need_hours2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/str_to_goal"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/rl_goal_info">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/ll_goal_correction_title" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0h"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_goal_progressbar" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/ll_goal_correction_title">
+                <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0h"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rl_goal_statistics" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/rl_goal_progressbar">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center_vertical" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="最近7天" android:layout_weight="1" style="@style/style_txt_content"/>
+                    <Button android:gravity="center" android:id="@+id/btn_more" android:background="@drawable/sel_translate2half" android:paddingBottom="8dp" android:layout_width="50dp" android:layout_height="36dp" android:text="@string/str_more" style="@style/style_txt_content"/>
+                </LinearLayout>
+                <View android:background="@color/black_tran_es" android:layout_width="match_parent" android:layout_height="1px"/>
+                <View android:layout_width="match_parent" android:layout_height="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/rl_goal_btn" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/rl_goal_statistics">
+                <Button android:textColor="@color/black_tran_es" android:id="@+id/btn_goal_edit" android:background="@drawable/sel_white2half_frame" android:visibility="gone" android:layout_width="110dp" android:layout_height="38dp" android:text="修改信息"/>
+                <Button android:textColor="@color/black_tran_es" android:id="@+id/btn_goal_finish" android:background="@drawable/sel_white2half_frame" android:layout_width="110dp" android:layout_height="38dp" android:text="@string/str_goal_finish"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

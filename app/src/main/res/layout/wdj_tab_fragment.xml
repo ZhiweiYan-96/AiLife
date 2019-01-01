@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.wandoujia.ads.sdk.widget.tabs.PagerSlidingTabStrip android:textSize="16dp" android:id="@+id/tabs" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentTop="true" app:pstsIndicatorColor="@color/wandou_ads_green_normal" app:pstsUnderlineColor="@color/wandou_ads_green_normal" app:pstsDividerColor="#00000000" app:pstsIndicatorHeight="4dp" app:pstsUnderlineHeight="0dp" app:pstsDividerPadding="0dp" app:pstsTabPaddingLeftRight="15dp" app:pstsShouldExpand="true" app:pstsTabTextColor="@color/color_tab_text_default"/>
+    <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabs"/>
+</RelativeLayout>

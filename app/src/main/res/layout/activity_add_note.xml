@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="320dp" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_add_note_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回顾一下" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_add_note_close" android:clickable="true" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/sel_close_gray2black" android:scaleType="center" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_add_note_check" android:clickable="true" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/sel_check_gray2black_px2" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="@color/black_tran_es" android:gravity="top" android:id="@+id/et_add_note_content" android:background="@color/white" android:padding="4dp" android:layout_width="match_parent" android:layout_height="140dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:hint="今天的成长、得失、感悟、发现..." android:ems="10" android:maxLength="5000" android:inputType="textMultiLine" style="@style/style_txt_content">
+                <requestFocus/>
+            </EditText>
+            <TextView android:id="@+id/tv_add_note_last_content" android:background="@color/white" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" style="@style/style_txt_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

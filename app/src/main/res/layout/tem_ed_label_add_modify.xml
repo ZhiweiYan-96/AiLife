@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/rl_wagets_today_bar" android:padding="@dimen/widget_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_act_title">
+    <EditText android:id="@+id/ed_tem_add_label" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_tem_add_label" android:background="@color/white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/ed_tem_add_label">
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_tem_add_label_defualt" android:background="@drawable/x_white_bg_black_frame" android:layout_width="0dp" android:layout_height="30dp" android:layout_margin="3dp" android:text="@string/str_default" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_tem_add_label_invest" android:background="@drawable/x_white_bg_black_frame" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/str_invest" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_tem_add_label_routine" android:background="@drawable/x_white_bg_black_frame" android:layout_width="0dp" android:layout_height="30dp" android:layout_margin="3dp" android:text="@string/str_routine" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_tem_add_label_sleep" android:background="@drawable/x_white_bg_black_frame" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/str_sleep" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_tem_add_label_waste" android:background="@drawable/x_white_bg_black_frame" android:layout_width="0dp" android:layout_height="30dp" android:layout_margin="3dp" android:text="@string/str_waste" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/ll_tem_add_label">
+        <TextView android:textColor="@color/black" android:gravity="center" android:layout_width="0dp" android:layout_height="30dp" android:layout_margin="3dp" android:text="@string/str_color" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black" android:gravity="center" android:background="@drawable/x_white_bg_black_frame" android:layout_width="0dp" android:layout_height="30dp" android:layout_margin="3dp" android:layout_weight="1"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_add_title" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_add_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <Button android:textColor="@color/white2" android:id="@+id/btn_add_save" android:background="@drawable/sel_blue2white_frame" android:layout_width="60dp" android:layout_height="35dp" android:layout_marginRight="10dp" android:scaleType="center" android:text="@string/str_save" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_add" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/black_tran_es" android:gravity="center" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:text="保存" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="15dp" android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_add_everyday_val_info" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:text="应小于20小时" android:layout_below="@+id/rl_add_title"/>
+    <ScrollView android:id="@+id/sv_add_v2_items" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tv_add_everyday_val_info">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_v2_items" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="0.5px"/>
+            <com.record.myLife.view.EditTextWithDel android:id="@+id/et_add_name" android:background="@color/white" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="70dp" android:hint="@string/str_input_you_goal" android:maxLength="30"/>
+            <com.record.myLife.view.EditTextWithDel android:textSize="14sp" android:textColor="@color/black" android:id="@+id/et_add_remark" android:background="@color/white" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/str_some_remarks" android:singleLine="true" android:maxLength="50"/>
+            <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="0.5px"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                <Button android:textSize="15sp" android:textColor="@color/black_tran_es" android:gravity="center_vertical" android:id="@+id/btn_add_color2" android:background="@drawable/sel_white2blue" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp" android:text="@string/str_icon"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/iv_add_color2" android:layout_width="@dimen/layout_height_small_ff" android:layout_height="@dimen/layout_height_small_ff" android:src="@drawable/x_circle_blue_1" android:scaleType="centerInside"/>
+                    <ImageView android:id="@+id/iv_add_label2" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_label_desklamp" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_add_switch_type" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+                    <View android:id="@+id/v_add_goal_type_bottom_bg" android:background="@color/bg_green1" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    <Button android:textColor="@color/black_tran_es" android:id="@+id/btn_add_goal_type" android:background="@drawable/sel_translate2half" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/str_goal"/>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/white2" android:gravity="center" android:background="@drawable/x_circle_green1" android:padding="2dp" android:layout_width="25dp" android:layout_height="25dp" android:text="Or"/>
+                <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+                    <View android:id="@+id/v_add_habit_type_bottom_bg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    <Button android:textColor="@color/black_tran_es" android:id="@+id/btn_add_habit_type" android:background="@drawable/sel_translate2half" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/str_plan_habit"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_add_deadline_goal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                <RelativeLayout android:id="@+id/rl_add_type" android:background="@drawable/sel_white2blue" android:layout_width="match_parent" android:layout_height="50dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/et_add_type" android:background="@null" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/str_type"/>
+                    <Button android:id="@+id/button1" android:background="@drawable/ic_right_arrow" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginRight="10dp" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/et_add_type_val" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:hint="@string/str_big_goal" android:layout_toLeftOf="@+id/button1" android:layout_alignParentTop="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_add_belong_to" android:background="@drawable/sel_white2blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1px">
+                    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/et_add_belong_to" android:background="@null" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/str_belong_to"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/et_add_belong_to_val" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginRight="20dp" android:hint="@string/str_big_goal" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_add_level_choose" android:background="@drawable/sel_white2blue" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="15dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                        <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_level_val" android:background="@null" android:layout_width="wrap_content" android:layout_height="50dp" android:hint="@string/str_click_to_select" android:singleLine="true" android:layout_toLeftOf="@+id/btn_add_level_change" android:layout_centerVertical="true"/>
+                        <Button android:id="@+id/btn_add_level_change" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="40dp" android:layout_height="50dp" android:scaleType="center" android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                    <TextView android:textSize="15sp" android:textColor="@color/black_tran_es" android:gravity="center_vertical" android:id="@+id/tv_add_level" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="1dp" android:text="@string/str_level2" android:layout_alignParentLeft="true"/>
+                </RelativeLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="0.5px"/>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_add_needTime_val" android:background="@drawable/sel_white2blue" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/black_tran_es" android:gravity="center_vertical" android:id="@+id/btn_add_needTime_val" android:background="@color/white" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="1dp" android:text="@string/str_need"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit_neet_time" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_needTime_val_suf" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/str_hour" android:singleLine="true"/>
+                        <Button android:id="@+id/btn_edit_need_time" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="40dp" android:layout_height="50dp" android:scaleType="center" android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                    <TextView android:textSize="15sp" android:textColor="@color/black" android:gravity="right" android:id="@+id/tv_add_needTime_val" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@+id/ll_edit_neet_time" android:layout_toRightOf="@+id/btn_add_needTime_val" android:layout_centerVertical="true" android:inputType="number"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_add_start_val_pre" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/black_tran_es" android:gravity="center_vertical" android:id="@+id/tv_add_start_val_pre" android:background="@drawable/sel_white2blue" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp" android:text="@string/str_start"/>
+                    <Button android:id="@+id/btn_add_start_reset" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="40dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:scaleType="center" android:layout_alignParentRight="true"/>
+                    <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_start_val" android:layout_width="wrap_content" android:layout_height="50dp" android:hint="@string/str_click_to_select" android:singleLine="true" android:layout_toLeftOf="@+id/btn_add_start_reset" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15sp" android:textColor="@color/black_tran_es" android:gravity="center_vertical" android:id="@+id/tv_add_deadline_val_pre" android:background="@drawable/sel_white2blue" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp" android:text="@string/str_deadLine"/>
+                    <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_deadline_val" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginRight="10dp" android:hint="@string/str_click_to_select" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="15sp" android:textColor="@color/black_tran_es" android:gravity="center_vertical" android:id="@+id/set_btn_filter" android:background="@drawable/sel_white2blue" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp" android:text="@string/str_everyDay"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit_everyday_need_time" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_everyday_suf" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/str_hour" android:singleLine="true" android:layout_alignParentRight="true"/>
+                        <Button android:id="@+id/btn_edit_everyday_need_time" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="40dp" android:layout_height="50dp" android:scaleType="center" android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                    <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_add_everyday_val" android:layout_width="wrap_content" android:layout_height="50dp" android:singleLine="true" android:layout_toLeftOf="@+id/ll_edit_everyday_need_time" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/rl_add_act_v2_habit_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center_vertical" android:background="@drawable/sel_white2blue" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/str_plan_habit_info"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/rl_add_setinfo" android:layout_centerHorizontal="true">
+                <Button android:id="@+id/btn_add_reset" android:background="@drawable/sel_white2half_frame" android:layout_width="110dp" android:layout_height="38dp" android:text="@string/str_clear"/>
+                <Button android:id="@+id/btn_add_delete" android:background="@drawable/sel_white2half_frame" android:visibility="gone" android:layout_width="110dp" android:layout_height="38dp" android:layout_marginLeft="10dp" android:text="@string/str_delete"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_add_title"/>
+</RelativeLayout>

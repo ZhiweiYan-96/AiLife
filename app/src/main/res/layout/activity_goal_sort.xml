@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dslv="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_set_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_goal" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.record.view.draglistview.DragSortListView android:id="@+id/list" android:paddingLeft="@dimen/margin_activity_horizontal" android:paddingTop="0dp" android:paddingRight="@dimen/margin_activity_horizontal" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="10dp" android:divider="@color/black_tran_ts" android:dividerHeight="1px" android:layout_weight="1" android:fastScrollEnabled="true" dslv:collapsed_height="2dp" dslv:drag_scroll_start="0.33" dslv:max_drag_scroll_speed="0.5" dslv:remove_mode_list_view="1" dslv:track_drag_sort="false" dslv:float_alpha="0.6" dslv:slide_shuffle_speed="0.3" dslv:drag_enabled="true" dslv:sort_enabled="true" dslv:remove_enabled="false" dslv:drag_start_mode="0" dslv:drag_handle_id="@+id/drag_handle" dslv:use_default_controller="true"/>
+    <TextView android:padding="@dimen/margin_activity_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提示：在有层级的目标列表展示中，大目标的顺序优先子目标；如：主页目标列表、小部件目标列表" style="@style/style_txt_prompt"/>
+</LinearLayout>

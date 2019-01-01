@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_itemdetail_title" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/tv_itemdetail_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_itemdetail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:text="好好学习，天天向上" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_itemdetail__label_add" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="22dp" android:src="@drawable/sel_pluse" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/rl_itemdetail_title"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_itemdetail_title">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_itemdetail_label_bg" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_alignParentLeft="true">
+                <ImageView android:id="@+id/iv_itemdetail_color" android:layout_width="@dimen/layout_height_small_ff" android:layout_height="@dimen/layout_height_small_ff" android:src="@drawable/x_circle_blue_1" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_itemdetail_label" android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/ic_label_bed" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/tv_itemdetail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="2014年02月08日" android:layout_below="@+id/rl_itemdetail_label_bg" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="11sp" android:textColor="@android:color/black" android:id="@+id/tv_itemdetail_from" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:text="18:56-19:00" android:layout_toRightOf="@+id/tv_itemdetail_date" android:layout_alignBaseline="@+id/tv_itemdetail_date" android:layout_alignBottom="@+id/tv_itemdetail_date"/>
+            <TextView android:textSize="25sp" android:textColor="@android:color/black" android:id="@+id/tv_itemdetail_take" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="14dp" android:text="00:04:00" android:layout_toRightOf="@+id/rl_itemdetail_label_bg" android:layout_alignBottom="@+id/rl_itemdetail_label_bg"/>
+            <com.record.myLife.view.DeliberateStarView android:id="@+id/dl_item_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_itemdetail_date" app:is_show_total_value_circle="gone" app:is_show_total_value_star="visible" app:is_all_star_indicator="yes" app:is_show_score_textview="gone"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/dl_item_detail">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@+id/et_itemdetail_remark" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:hint="添加心得" android:inputType="textMultiLine"/>
+                    <Button android:id="@+id/tv_itemdetail_change" android:background="@drawable/sel_pencil_gray2blue" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="100dp" android:scaleType="center" android:layout_below="@+id/et_itemdetail_remark"/>
+                    <Button android:id="@+id/btn_itemdetail_del" android:background="@drawable/sel_garbage_2half" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="100dp" android:scaleType="center" android:layout_below="@+id/et_itemdetail_remark" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

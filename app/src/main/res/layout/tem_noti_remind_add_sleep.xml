@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_noti_add_time_outer" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentLeft="true">
+    <ImageView android:id="@+id/iv_noti_show_set" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:src="@drawable/ic_launcher" android:scaleType="center"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.8">
+        <TextView android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_remind_add_sleep_record" android:singleLine="true" style="@style/style_txt_content"/>
+        <TextView android:textColor="@color/bg_blue1" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="睡眠：00:23至09:77" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/white2" android:gravity="center" android:id="@+id/tv_action_edit" android:background="@drawable/sel_translate2half" android:padding="3dp" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="编辑" android:layout_weight="1"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_action_add" android:background="@drawable/sel_translate2half" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="一键添加" android:layout_weight="1"/>
+</LinearLayout>

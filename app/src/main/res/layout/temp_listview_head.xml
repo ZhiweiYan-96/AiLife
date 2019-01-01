@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/head_contentLayout" android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下拉刷新"/>
+            <TextView android:textSize="10sp" android:textColor="#b89766" android:id="@+id/head_lastUpdatedTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上次更新"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="60dp" android:layout_marginRight="26dp" android:layout_toLeftOf="@+id/linearLayout1" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/head_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goicon"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/head_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/wdj_app_widget_container" android:background="#4d000000" android:paddingLeft="@dimen/wdj_ad_container_horizontal_margin" android:paddingTop="8dp" android:paddingRight="@dimen/wdj_ad_container_horizontal_margin" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/wdj_ad_widget_interstitial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/wdj_app_widget_view"/>
+    <FrameLayout android:id="@+id/wdj_ad_widget_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

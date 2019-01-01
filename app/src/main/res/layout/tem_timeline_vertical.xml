@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/tem_timeline_vertical_framelayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/tem_timeline_vertical_itemslayout" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#00ffffff"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tem_timeline_vertical_overlaylayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tem_timeline_vertical_overlaytime" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

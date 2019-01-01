@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/v_vertical_line" android:background="@color/black_tran_tw" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_alignTop="@+id/ll_history_v2_items" android:layout_alignBottom="@+id/ll_history_v2_items"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_history_v2_items" android:paddingBottom="@dimen/margin_activity_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>

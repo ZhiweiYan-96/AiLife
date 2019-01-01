@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调试" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/bg_green3" android:id="@+id/debug_btn_exportDb" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="导出数据库"/>
+            <Button android:id="@+id/debug_btn_inportDb" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="导入数据库"/>
+            <Button android:id="@+id/debug_btn_change" android:background="@drawable/sel_white2half_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="更改数据"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/bg_red2" android:id="@+id/debug_btn_clear_all_table_upload" android:background="@drawable/sel_white2half_frame" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="清除全部上传属性" android:layout_weight="1"/>
+                <Button android:textColor="@color/bg_red2" android:id="@+id/debug_btn_clear_table_upload" android:background="@drawable/sel_white2half_frame" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="清除指定上传属性" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/bg_red2" android:id="@+id/debug_btn_copy_data" android:background="@drawable/sel_white2half_frame" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="数据复制100次(测大小)" android:layout_weight="1"/>
+                <Button android:id="@+id/debug_btn_start_upload_thread" android:background="@drawable/sel_white2half_frame" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="启动上传线程" android:layout_weight="1"/>
+            </LinearLayout>
+            <Button android:textColor="@color/bg_green3" android:id="@+id/debug_btn_show_table" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="查看表" android:layout_weight="1"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/bg_green3" android:id="@+id/debug_btn_current_upload_route" android:background="@drawable/sel_white2half_frame" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="上传：" android:singleLine="true" android:layout_weight="1"/>
+                <Button android:textColor="@color/bg_green3" android:id="@+id/debug_btn_current_upload_test" android:background="@drawable/sel_white2half_frame" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="测试" android:singleLine="true"/>
+            </LinearLayout>
+            <Button android:textColor="@color/bg_green3" android:id="@+id/debug_save_log_on_itodayss" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="日志保存" android:layout_weight="1"/>
+            <Button android:textColor="@color/bg_green3" android:id="@+id/debug_save_logfile_for_tomato" android:background="@drawable/sel_white2half_frame" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="2dp" android:text="save_logfile_for_tomato" android:layout_weight="1"/>
+        </LinearLayout>
+    </ScrollView>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </TableLayout>
+</LinearLayout>

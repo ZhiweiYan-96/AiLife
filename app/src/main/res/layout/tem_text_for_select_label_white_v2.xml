@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:background="@drawable/sel_white2blue" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp">
+    <TextView android:id="@+id/tv_temp_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/tv_temp_text" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="1354654" android:singleLine="true" android:layout_toLeftOf="@+id/iv_temp_circle"/>
+    <ImageView android:id="@+id/iv_temp_circle" android:layout_width="50dp" android:layout_height="40dp" android:src="@drawable/sel_pencil_gray2grary" android:scaleType="centerInside" android:layout_alignTop="@+id/tv_temp_text" android:layout_alignBottom="@+id/tv_temp_text" android:layout_alignParentRight="true"/>
+    <View android:background="@color/gray" android:layout_width="2px" android:layout_height="40dp" android:layout_toLeftOf="@+id/iv_temp_circle" android:layout_alignBottom="@+id/tv_temp_text"/>
+</RelativeLayout>

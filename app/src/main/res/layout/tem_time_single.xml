@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center" android:orientation="horizontal" android:id="@+id/rl_temp_show_outer" android:background="@color/white2" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_tem_time_title" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentTop="true">
+        <Button android:id="@+id/btn_tem_time_save" android:background="@drawable/sel_translate2half" android:layout_width="60dp" android:layout_height="60dp" android:text="确定" android:layout_alignParentRight="true"/>
+        <Button android:id="@+id/btn_tem_time_cancel" android:background="@drawable/sel_translate2half" android:layout_width="60dp" android:layout_height="60dp" android:text="取消" android:layout_alignParentLeft="true"/>
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_tem_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改停止时间" android:layout_toLeftOf="@+id/btn_tem_time_save" android:layout_toRightOf="@+id/btn_tem_time_cancel" android:layout_alignBottom="@+id/btn_tem_time_cancel" android:layout_alignParentTop="true"/>
+        <View android:background="@color/black" android:layout_width="1px" android:layout_height="30dp" android:layout_toLeftOf="@+id/btn_tem_time_save" android:layout_centerVertical="true"/>
+        <View android:background="@color/black" android:layout_width="1px" android:layout_height="30dp" android:layout_alignLeft="@+id/tv_tem_time_title" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="@color/bg_yellow2" android:gravity="center" android:id="@+id/tv_tem_time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改后点确定即可" android:layout_below="@+id/rl_tem_time_title" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="10dp" android:layout_below="@+id/tv_tem_time_info">
+        <TextView android:id="@+id/tv_tem_temp1" android:layout_width="60dp" android:layout_height="wrap_content" android:text=" "/>
+        <com.record.view.wheel.widget.WheelView android:id="@+id/wv_tem_hour2" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.record.view.wheel.widget.WheelView android:id="@+id/wv_tem_min2" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:id="@+id/tv_tem_temp2" android:layout_width="60dp" android:layout_height="wrap_content" android:text=" "/>
+    </LinearLayout>
+</RelativeLayout>

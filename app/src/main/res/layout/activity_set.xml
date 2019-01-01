@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:orientation="vertical" android:background="@color/gray" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/set_rl_f" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn_set_back" android:background="@drawable/sel_arrow_gray2black_left" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/tv_set_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_set" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/btn_set_apps" android:background="@drawable/sel_apps" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_sel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_noti" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="@string/str_status_bar"/>
+            <ImageView android:id="@+id/iv_set_noti" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginRight="10dp" android:src="@drawable/ic_on_v2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_filter" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="@string/str_filter"/>
+            <ImageView android:id="@+id/iv_set_filter" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginRight="10dp" android:src="@drawable/ic_on_v2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_categotory" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="分类"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginRight="10dp" android:src="@drawable/ic_on_v2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/btn_set_general" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_general"/>
+            <ImageView android:id="@+id/btn_set_general_right" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_set_general_dot" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_red_dot" android:layout_toLeftOf="@+id/btn_set_general_right" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/btn_set_subtype" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_label"/>
+            <ImageView android:id="@+id/btn_set_subtype_right" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_set_subtype_dot" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_red_dot" android:layout_toLeftOf="@+id/btn_set_subtype_right" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/btn_set_remind" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_remind"/>
+            <ImageView android:id="@+id/iv_set_remind_right_1" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_set_remind_dot" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_red_dot" android:layout_toLeftOf="@+id/iv_set_remind_right_1" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_feedback" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="反馈"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_version" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="版本"/>
+            <ImageView android:id="@+id/iv_set_remind_right_2" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_set_had_version" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_red_dot" android:layout_toLeftOf="@+id/iv_set_remind_right_2" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_about" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_About"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/btn_set_getversion" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="2dp" android:text="检查更新"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_support" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="1dp" android:text="支持"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_help" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_help"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_backup" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_backup_export"/>
+            <ImageView android:id="@+id/iv_set_remind_right_3" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_set_had_backup_dot" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_red_dot" android:layout_toLeftOf="@+id/iv_set_remind_right_3" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <Button android:textSize="15sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/set_btn_login" android:background="@drawable/sel_white2blue" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/setting_bar_high" android:layout_marginTop="1dp" android:text="@string/str_sign_in"/>
+            <ImageView android:layout_width="10dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

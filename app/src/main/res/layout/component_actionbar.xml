@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:orientation="horizontal" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/textSize_Medium_Large" android:gravity="center" android:id="@+id/tv_left_second" android:background="@null" android:paddingLeft="@dimen/margin_activity_horizontal" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_large" android:text="标题" android:singleLine="true" style="@style/style_txt_title"/>
+    <View android:id="@+id/v_line_1" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/tv_left_second"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_large">
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_left_first" android:clickable="true" android:layout_width="@dimen/layout_height_large" android:layout_height="@dimen/layout_height_large">
+            <ImageButton android:id="@+id/iv_left_first" android:background="@null" android:clickable="false" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/sel_arrow_gray2black_left" android:scaleType="centerInside"/>
+            <TextView android:textSize="@dimen/textSize_Medium_Large" android:layout_gravity="center" android:id="@+id/tv_left_first" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/textSize_Medium_Large" android:gravity="center" android:background="@null" android:paddingLeft="@dimen/margin_activity_horizontal" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="@dimen/layout_height_large" android:singleLine="true" android:layout_weight="1" style="@style/style_txt_title"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_right_second" android:background="@drawable/sel_translate2half" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/layout_height_large" android:layout_height="@dimen/layout_height_large">
+            <ImageButton android:id="@+id/iv_right_second" android:background="@null" android:clickable="false" android:layout_width="@dimen/layout_height_xmicro" android:layout_height="@dimen/layout_height_xmicro" android:scaleType="centerInside"/>
+            <TextView android:textSize="@dimen/textSize_Small_Medium" android:layout_gravity="center" android:id="@+id/tv_right_second" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除" android:singleLine="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_right_first" android:background="@drawable/sel_translate2half" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/layout_height_large" android:layout_height="@dimen/layout_height_large">
+            <ImageButton android:id="@+id/ib_right_first" android:background="@null" android:clickable="false" android:layout_width="@dimen/layout_height_xmicro" android:layout_height="@dimen/layout_height_xmicro" android:scaleType="centerInside"/>
+            <TextView android:textSize="@dimen/textSize_Small_Medium" android:layout_gravity="center" android:id="@+id/tv_right_first" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/tv_tem_history_record_outter" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="70dp">
+    <TextView android:id="@+id/tv_tem_history_record_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rl_tem_history_record_color_label" android:background="@drawable/x_white_bg_black_frame" android:paddingRight="5dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="15sp" android:textColor="@color/black_tran_fs" android:id="@+id/tp_tem_history_record_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="10dp" android:text="暂无记录哦!" android:singleLine="true"/>
+    </RelativeLayout>
+</RelativeLayout>

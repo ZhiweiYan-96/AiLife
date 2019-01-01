@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/hs_tem_time" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="80dp" android:layout_margin="10dp" android:layout_below="@+id/tv_today_addtime_info">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_tem_time_items" android:layout_width="match_parent" android:layout_height="80dp"/>
+</HorizontalScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_medium">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/sel_translate2half" android:layout_width="match_parent" android:layout_height="@dimen/layout_height_medium">
+        <TextView android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_activity_horizontal" android:text="今天14:56" android:layout_weight="1" style="@style/style_txt_content"/>
+        <TextView android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="共25min" android:layout_weight="1" style="@style/style_txt_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_click_to_submit" android:layout_weight="1" style="@style/style_txt_content"/>
+    </LinearLayout>
+</LinearLayout>

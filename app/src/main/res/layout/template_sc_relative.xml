@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:dslv="http://schemas.android.com/apk/res/com.record.myLife" android:id="@+id/sv_today_items" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_tem_statistic" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_tem_dough" android:layout_width="match_parent" android:layout_height="280dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_tem_statistic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_tem_dough"/>
+    </RelativeLayout>
+</ScrollView>
